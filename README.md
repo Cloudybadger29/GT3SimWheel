@@ -106,13 +106,12 @@ The mechanical stack consists of:
 
 - [x] Mechanical 3D CAD modeling & assembly (Fusion ➔ SolidWorks for industry-standard workflow)
 - [ ] Complete routing, silkscreen, and design rule checks (DRC) on the KiCad PCB
-- [ ] Order custom PCB prototype batch and procure BOM components
-- [ ] 3D print grip shells, rear electronics housing, and internal spacers
-- [ ] CNC machine the structural faceplate
+- [ ] Order custom PCB prototype batch and BOM components
+- [ ] 3D print grip shells, rear electronics housing, internal spacers, and tester faceplate 
+- [ ] Order the faceplate for CNC machining
 - [ ] Hand-solder PCB components (Pro Micro, diodes, wiring headers)
 - [ ] Develop and test USB HID gamepad firmware for ATmega32U4
-- [ ] Assembly, calibration, and on-track testing in sim racing titles
-
+- [ ] Assembly and calibration
 ---
 
 ## Tools & Environments Used
