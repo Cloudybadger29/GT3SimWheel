@@ -1,12 +1,12 @@
 # Custom GT3 Sim Racing Steering Wheel
 
-An engineering portfolio showcasing an end-to-end mechatronics design: custom CAD mechanical assembly, 3D printable modular enclosures and ergonomic grips, CNC-machined structural faceplate, integrated magnetic dual-paddle shifters with microswitches, and a custom diode-matrix carrier PCB designed for manual through-hole soldering.
+A project with custom CAD mechanical assembly, 3D printable modular enclosures and ergonomic grips, CNC-machined structural faceplate, integrated magnetic dual-paddle shifters with microswitches, and a custom diode-matrix carrier PCB designed for manual through-hole soldering.
 
 ---
 
 ## Project Overview
 
-This project is a competition-grade **GT3 Sim Racing Wheel** engineered for PC sim racing platforms (iRacing, Assetto Corsa Competizione, rFactor 2).
+This project is a **GT3 Sim Racing Wheel** engineered for PC sim racing platforms (iRacing, Assetto Corsa Competizione, rFactor 2).
 
 The project is currently in the **detailed engineering and design verification phase**:
 - **Mechanical Design (CAD)**: Conceptualized and surfaced initially in **Autodesk Fusion**, then transitioned to **Dassault Systèmes SolidWorks** for assembly modeling and to follow industry standards.
@@ -14,7 +14,7 @@ The project is currently in the **detailed engineering and design verification p
 - **Electronics & ECAD (In Progress)**: Custom carrier backplane currently being laid out in **KiCad EDA** around an ATmega32U4 controller, integrating anti-ghosting switching diodes and through-hole solder pads planned for manual assembly.
 - **Shifter Subassembly**: Dual-action magnetic paddle units driven by high-reliability Omron microswitches.
 
-*Note: All components are currently modeled and verified in CAD/ECAD. Physical fabrication and component procurement will begin upon finalization and sign-off of the PCB layout.*
+*Note: All components are currently modeled in CAD/ECAD. Physical manufacturing and component sourcing will begin once the PCB layout is complete.*
 
 ---
 
@@ -22,28 +22,28 @@ The project is currently in the **detailed engineering and design verification p
 
 | Isometric Assembly | Exploded CAD View |
 | :---: | :---: |
-| <img src="docs/images/wheel_front_iso.jpg" alt="Front Isometric View" width="420"/> | <img src="docs/images/wheel_exploded.jpg" alt="Exploded CAD Assembly" width="420"/> |
+| <img src="pictures/frontView" alt="Front Isometric View" width="420"/> | <img src="pictures/explodeView" alt="Exploded CAD Assembly" width="420"/> |
 
 | Rear & Paddle Assembly | Custom PCB Carrier (KiCad 3D) |
 | :---: | :---: |
-| <img src="docs/images/wheel_rear_paddles.jpg" alt="Rear View with Shifters" width="420"/> | <img src="docs/images/pcb_3d_render.png" alt="KiCad PCB 3D Render" width="420"/> |
+| <img src="pictures/backView" alt="Rear View with Shifters" width="420"/> | <img src="pictures/pcb" alt="KiCad PCB 3D Render" width="420"/> |
 
 ---
 
-## Key Engineering Specifications
+## Key Engineering Points
 
-### 1. Mechanical Architecture & Manufacturing
+### 1. Mechanical Design & Manufacturing
 - **CNC Structural Faceplate**: A rigid custom CNC-machined front plate designed to withstand high force-feedback torque loads from direct-drive wheelbases without chassis deflection.
-- **Additive Manufacturing (3D Printing)**: All secondary enclosures, grip bodies, and mounting spacers are engineered for 3D printing.
-- **Two-Piece Modular Grips**: Split-shell ergonomic hand grips contour to standard racing gloves and bolt securely through the faceplate using countersunk M5 hardware.
-- **Standard Hub Pattern**: Integrated 70mm / 50.8mm bolt pattern allowing direct fitment to standard sim racing quick-release hubs.
+- **3D Printing**: All enclosures, grip bodies, and mounting spacers will be 3D printed.
+- **Two-Piece Modular Grips**: Split-shell hand grips which can be easily replaced and bolt securely through the faceplate using countersunk M5 hardware.
+- **Standard Hub Pattern**: Integrated Moza ESR wheel bolt pattern allowing direct fitment to only the quick release on the Moza ESR Quick Release. Adapters between bolt patterns are widespread.
 
 ### 2. Dual-Paddle Magnetic Shifters
-- **Actuation**: Integrated 8×3mm neodymium magnets deliver crisp, tactile snap-action return.
-- **Sensors**: Sourced **Omron D2FC-F-7N** microswitches rated for high-cycle reliability and responsive shift registration.
-- **Dual-Paddle Geometry**: Upper and lower paddles allow independent assignment (gear up/down plus secondary functions such as DRS, pit limiter, or clutch bite point).
+- **Actuation**: Integrated 8×3mm magnets give crisp, tactile snap-action return.
+- **Sensors**: **Omron D2FC-F-7N** microswitches rated for high-cycle reliability and responsive shift registration.
+- **Dual-Paddle Geometry**: Upper and lower paddles allow independent assignment (gear up/down plus secondary functions).
 
-### 3. PCB & Electrical Architecture (In Design)
+### 3. PCB & Electrical Design (In Design)
 - **ECAD Tool**: Schematic capture and board layout in **KiCad EDA**.
 - **Microcontroller**: Arduino Pro Micro footprint (ATmega32U4, 5V/16MHz) for native USB HID gamepad capabilities.
 - **Assembly Plan**: Through-hole layout designed for precision hand soldering, featuring clearly labeled reference silk screens for components and leaded DO-35 diodes.
@@ -52,7 +52,7 @@ The project is currently in the **detailed engineering and design verification p
   - 10x PBS-33B momentary pushbuttons
   - 4x Omron D2FC-F-7N paddle microswitches
   - 2x KY-040 rotary encoders (for in-race TC, ABS, or brake-bias trim)
-- **Central Pass-Through**: Custom clearance holes routed into the PCB matching the 70mm PCD wheelbase bolt circle.
+- **Central Pass-Through**: Custom clearance holes routed into the PCB matching the PCD wheelbase bolt circle.
 
 ---
 
@@ -63,7 +63,7 @@ The mechanical stack consists of:
 2. **Faceplate Controls**: 10x PBS-33B pushbuttons and 2x KY-040 rotary encoder shafts.
 3. **CNC Front Faceplate**: Central load-bearing chassis with countersunk and clearance bores.
 4. **Rear Split Grips**: Rear grip shells with internal captive nut pockets.
-5. **Back Housing & Spacer**: Houses the custom KiCad PCB and internal wiring harness.
+5. **Back Housing & Spacer**: Houses the custom PCB and internal wiring harness.
 6. **Dual Paddle Units**: Dual magnetic microswitch shifters bolted to the rear plate using M2.5/M2 hardware.
 
 ---
@@ -122,8 +122,8 @@ The mechanical stack consists of:
 
 ---
 
-## Author & Contact
+## Author, Contact and Credits
 
 - **Designer & Builder**: [Zeeshan Ahmed]((https://github.com/Cloudybadger29))
 - **Project Repository**: [GitHub Repo Link](https://github.com/Cloudybadger29/GT3SimWheel)
-- **Double Paddle Shifter Designer**:[Joshua van der Voort](https://www.printables.com/@JoshuavanderV_932900)
+- **Double Paddle Shifter Designer**: [Joshua van der Voort](https://www.printables.com/@JoshuavanderV_932900)
